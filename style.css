@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+main {
+    background: #EFF1FF;
+    width: 38.4rem;
+    height: 199.5rem;
+    margin: auto;
+}
+
+header {
+    width: 38.4rem;
+    height: 27.9rem;
+    background: #8E9AAF;   
+    
+}
+
+header img {
+    padding-top: 3.2rem;
+    padding-left: 12.3rem;
+}
+h1 {
+    background: #CBC0D3;
+    height: 6.7rem;
+    text-align: center;
+    font-family: 'Staatliches', cursiva;    
+    font-size: 4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-top: 1.7rem;    
+}
+
+h3 {
+    width: 30.5rem;
+    margin: 1.4rem auto;
+    font-family:'Palanquin';
+    text-align: center;    
+    color:#23053A;
+    line-height: 1.5rem;
+    margin-bottom: 6.3rem; 
+}
+
+.card {
+    position: relative;
+}
+.card img{
+    object-fit: cover;
+    transition: all 200ms;
+    padding-left: 3.2rem;
+    padding-bottom: 32px;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    opacity: 0.4;
+}
+
+.card h2 {
+    position: absolute;
+    background-color: white;
+    width: 11.2rem;
+    height: 3.5rem;
+    border-radius: 2rem;
+    font-size: 2.0rem;
+    font-weight: 400;
+    color: #4A4E69;
+    top: 1.6rem;
+    margin-left: 22.4rem;     
+    text-align: center; 
+    padding-top: 5px; 
+
+}
+
+@keyframes topdown {
+    /* após o @keyframes eu coloco o nome da animação de minha preferência nesse caso eu coloquei topdow mais poderia colocar
+    de cima para baixo e dentro da chave insira as instruções*/
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: topdown 1s
+}
